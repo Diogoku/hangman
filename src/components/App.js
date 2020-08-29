@@ -5,13 +5,13 @@ import { Provider } from "react-redux";
 import store from "../store";
 
 // COMPONENT
-import Game from "./Game.jsx";
+import Game from "./Game";
 
 // CSS
 import "../css/default.css";
 
 // FONT AWESOME ICONS
-import "./FontAwesomeIcons/index.jsx";
+import "./FontAwesomeIcons/index";
 
 function App() {
   return (

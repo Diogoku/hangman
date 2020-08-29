@@ -1,12 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import hangman0 from "../images/hangman0.png";
-import hangman1 from "../images/hangman1.png";
-import hangman2 from "../images/hangman2.png";
-import hangman3 from "../images/hangman3.png";
-import hangman4 from "../images/hangman4.png";
-import hangman5 from "../images/hangman5.png";
-import hangman6 from "../images/hangman6.png";
+import hangman0 from "../images/hangman0.PNG";
+import hangman1 from "../images/hangman1.PNG";
+import hangman2 from "../images/hangman2.PNG";
+import hangman3 from "../images/hangman3.PNG";
+import hangman4 from "../images/hangman4.PNG";
+import hangman5 from "../images/hangman5.PNG";
+import hangman6 from "../images/hangman6.PNG";
 
 function Hangman() {
   const { wrongLetters } = useSelector((state) => state.HangmanReducer);

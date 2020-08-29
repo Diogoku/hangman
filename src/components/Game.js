@@ -11,12 +11,12 @@ import {
 } from "../actions/hangmanActionCreators";
 
 // COMPONENTS
-import CreateSecret from "./forms/CreateSecret.jsx";
-import ChooseLetter from "./forms/ChooseLetter.jsx";
-import Letters from "./Letters.jsx";
-import LettersUsed from "./LettersUsed.jsx";
-import Hangman from "./Hangman.jsx";
-import FinalResult from "./FinalResult.jsx";
+import CreateSecret from "./forms/CreateSecret";
+import ChooseLetter from "./forms/ChooseLetter";
+import Letters from "./Letters";
+import LettersUsed from "./LettersUsed";
+import Hangman from "./Hangman";
+import FinalResult from "./FinalResult";
 
 export default function game() {
   const state = useSelector((state) => state.HangmanReducer);
