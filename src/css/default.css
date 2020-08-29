@@ -1,0 +1,189 @@
+:root {
+  --mainTextColor: #000000;
+  --secundaryTextColor: #ffffff;
+  --backgroundColor: #ffffff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Pangolin", cursive;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  color: var(--mainTextColor);
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.game-title {
+  font-weight: 600;
+}
+
+.game-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+  -webkit-box-shadow: 0 0 2px 0px black;
+  -moz-box-shadow: 0 0 2px 0px black;
+  box-shadow: 0 0 2px 0px black;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.hangman-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.choose-letter-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#select-letter {
+  padding: 0.2rem;
+  margin-right: 0.5rem;
+}
+
+.input {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 2px 0px black;
+  -moz-box-shadow: 0 0 2px 0px black;
+  box-shadow: 0 0 2px 0px black;
+}
+
+.input:hover {
+  cursor: pointer;
+}
+
+.correct-letter {
+  text-align: center;
+}
+
+.list-letters-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+.letter-white-space {
+  width: 50px;
+  height: 50px;
+  border-bottom: 3px solid black;
+}
+
+.space-white-space {
+  width: 50px;
+  height: 50px;
+}
+
+.letters-used-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: center;
+}
+
+.letters-used-wrapper-extension {
+  display: flex;
+  column-gap: 0.2rem;
+}
+
+p {
+  font-size: 18px;
+}
+
+.hint-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play-again-button {
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px 0px black;
+  -moz-box-shadow: 0 0 2px 0px black;
+  box-shadow: 0 0 2px 0px black;
+}
+
+.play-again-button:hover {
+  cursor: pointer;
+}
+
+#create-secret-form {
+  -webkit-box-shadow: 0 0 2px 0px black;
+  -moz-box-shadow: 0 0 2px 0px black;
+  box-shadow: 0 0 2px 0px black;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.4rem;
+}
+
+.create-secret-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.create-secret-input {
+  padding: 0.2rem;
+}
+
+.create-secret-button {
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  -webkit-box-shadow: 0 0 2px 0px black;
+  -moz-box-shadow: 0 0 2px 0px black;
+  box-shadow: 0 0 2px 0px black;
+  border-radius: 5px;
+}
+
+.create-secret-button:hover {
+  cursor: pointer;
+}
+
+.error-message {
+  color: rgb(207, 0, 0);
+}
+
+.wrong-letters {
+  color: rgb(207, 0, 0);
+}
+
+.correct-letters {
+  color: rgb(30, 255, 0);
+}

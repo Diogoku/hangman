@@ -1,0 +1,31 @@
+.final-result-wrapper {
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  animation: final-result-animation 1s 0s 1 forwards;
+  border-radius: 5px;
+}
+
+.win-result {
+  background-color: rgb(30, 255, 0);
+}
+
+.lose-result {
+  background-color: rgb(207, 0, 0);
+}
+
+.final-result-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secundaryTextColor);
+}
+
+@keyframes final-result-animation {
+  from {
+    top: 0%;
+  }
+
+  to {
+    top: 50%;
+  }
+}
